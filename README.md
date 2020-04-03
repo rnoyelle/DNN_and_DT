@@ -17,8 +17,8 @@ Create Dense Neural Neural with a decision tree architecture
 
 ### Neural Network Architecture
 First, it learns a decision tree.
-![alt tag](results/iris/decision_tree_iris.pdf.pdf)
+![alt tag](images/decision_tree_iris.jpg)
 
 Then, from the tree the architecture of the dense neural network is defined.
-![alt tag](images/iris/model_architecture_iris.pdf)
+![alt tag](images/model_architecture_iris.jpg)
 
