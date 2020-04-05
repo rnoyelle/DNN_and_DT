@@ -20,15 +20,21 @@ dim_dense = 100
 
 # training params
 batch_size = 128
-n_epoch = 2  # 10  # 500
-patience = 3  # 50  # Early Stopping
+# n_epoch = 2  # 10  # 500
+# patience = 3  # 50  # Early Stopping
 
 # Loading the data
 DM = DataManager(dataset_path='../datasets')
 supported_dataset = DM.get_supported_dataset()
 print('Dataset available :', supported_dataset)
 
-for data_name in ['Covertype']:  #supported_dataset: # 'Covertype'
+for data_name, n_epoch, patience, max_depth in [('iris', 500, 50, None), ('Haberman’s Survival', 500, 50, None),
+                                                ('Car Evaluation', 500, 50, None), ('Titanic', 500, 50,None),
+                                                ('Breast Cancer Wisconsin', 500, 50, None), ('Pima Indian Diabetes', 500, 50, None),
+                                                ('Gime-Me-Some-Credit', 10, 3, None), ('Poker Hand', 10, 3, None),
+                                                ('GermanCredit Data', 500, 50, 10), ('Connect-4', 10, 3, 10),
+                                                ('Image Segmentation', 500, 50,10), ('Covertype', 10, 3, 10)]:
+
     dirName = '../results/' + re.sub('[^a-zA-Z0-9]+', '', data_name)
     if not os.path.exists(dirName):
         os.mkdir(dirName)
@@ -52,8 +58,9 @@ for data_name in ['Covertype']:  #supported_dataset: # 'Covertype'
     print(y_train.shape, y_test.shape)
 
     # Create the Dense Neural Network
-    model, clf = create_network(X, np.argmax(y, axis=1),
+    model, clf = create_network(X_train, np.argmax(y_train, axis=1),
                                 dim_embedding=dim_embedding, dim_dense=dim_dense,
+                                max_depth=max_depth,
                                 return_tree=True)
 
     model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
