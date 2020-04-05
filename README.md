@@ -15,6 +15,10 @@ Create Dense Neural Neural with a decision tree architecture
 
 `python3 main.py` 
 
+* To train a model on a multivariate dataset, run the main_num_and_cat_data.py file using :
+
+'python3 main_num_and_cat_data.py'
+
 ### Neural Network Architecture
 First, it learns a decision tree.
 
