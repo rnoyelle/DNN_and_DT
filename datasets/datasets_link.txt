@@ -1,0 +1,16 @@
+Iris : sklearn
+Haberman’s Survival : https://archive.ics.uci.edu/ml/datasets/Haberman's+Survival
+Car Evaluation : https://archive.ics.uci.edu/ml/datasets/car+evaluation
+Titanic (K) : https://www.kaggle.com/c/titanic/data
+Breast Cancer Wisconsin : https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic)
+Pima Indian Diabetes (K) : https://www.kaggle.com/uciml/pima-indians-diabetes-database
+Gime-Me-Some-Credit (K) : https://www.kaggle.com/c/GiveMeSomeCredit/data
+Poker Hand : https://archive.ics.uci.edu/ml/datasets/Poker+Hand
+Flight Delay : https://www.kaggle.com/usdot/flight-delays
+HR Evaluation (K) : https://www.kaggle.com/rhuebner/human-resources-data-set
+German Credit Data : https://archive.ics.uci.edu/ml/datasets/Statlog+(German+Credit+Data)
+Connect-4 : https://archive.ics.uci.edu/ml/datasets/Connect-4
+Image Segmentation : http://archive.ics.uci.edu/ml/datasets/image+segmentation
+Covertype : https://archive.ics.uci.edu/ml/datasets/covertype
+HTRU2 : https://archive.ics.uci.edu/ml/datasets/HTRU2
+Tox21 : https://tripod.nih.gov/tox21/challenge/
